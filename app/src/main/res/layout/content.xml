@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.hint.txt"
+        android:textSize="25dp"
+        android:id="@+id/txtResul"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="@string/main.hint.num"
+        android:ems="10"
+        android:id="@+id/inputNumber"
+        android:layout_below="@+id/txtResul"
+        android:layout_alignLeft="@+id/txtResul"
+        android:layout_alignStart="@+id/txtResul"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.button.calc"
+        android:id="@+id/btnCalculate"
+        android:layout_below="@+id/inputNumber"
+        android:layout_alignLeft="@+id/inputNumber"
+        android:layout_alignStart="@+id/inputNumber"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator"
+        android:layout_below="@+id/btnCalculate"
+        android:layout_alignStart="@+id/btnCalculate"
+        android:layout_alignLeft="@+id/txtResul"
+        android:layout_alignRight="@id/txtResul"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.hint.res"
+        android:textSize="18dp"
+        android:id="@+id/inputResult"
+        android:layout_below="@+id/separator"
+        android:layout_alignParentLeft="@+id/btnCalculate"
+        android:layout_alignParentStart="@+id/btnCalculate"
+        android:layout_marginTop="7dp"/>
+
+</RelativeLayout>

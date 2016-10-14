@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sumatoria N numeros</string>
+    <string name="main.hint.num">Numero</string>
+    <string name="main.hint.txt">Proporcione un número entero</string>
+    <string name="main.button.calc">Calcular</string>
+    <string name="main.hint.res">El resultado es:</string>
+
+</resources>
